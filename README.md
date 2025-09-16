@@ -1,11 +1,13 @@
 # Atlassian Engagement & Retention — Synthetic Dataset
+time series need
 
+classification features: plan_tier company_size industry acquisition_channel is_enterprise expansion_event session_length_sec app_version latency_ms duration_ms success active_seats invoices_overdue discount_applied
 ### users.csv
-| column | description |
-|---|---|
-| user_id | Unique user identifier |
-| signup_date | Date when user signed up |
-| plan_tier | User's subscription plan |
+| column | description | my notes |
+|---|---|---|
+| user_id | Unique user identifier |  |
+| signup_date | Date when user signed up |  |
+| plan_tier | User's subscription plan |  |
 | company_size | Size category of user's company |
 | region | Geographic region |
 | industry | Business industry category |
@@ -37,18 +39,22 @@
 | ts | Event timestamp |
 | feature_name | Feature being used |
 | action | Type of action performed |
-| duration_ms | Event duration in milliseconds |
-| latency_ms | Response latency in milliseconds |
+| duration_ms | Event duration in milliseconds | use for how long
+| latency_ms | Response latency in milliseconds | delay 
 | success | Whether event completed successfully |
 
 ### billing.csv
 | column | notes |
 |---|---|
-| user_id | User identifier |
-| month | Billing month |
-| plan_tier | Current subscription plan |
-| active_seats | Number of active seats |
+| user_id | User identifier | distinct |
+| month | Billing month | 18 months |
+| plan_tier | Current subscription plan | ['free' 'standard' 'premium'] |
+| active_seats | Number of active seats | 0 - 700
 | mrr | Monthly recurring revenue |
-| discount_applied | Whether discount was applied |
-| invoices_overdue | Whether invoices are overdue |
-| support_ticket_count | Number of support tickets |
+| discount_applied | Whether discount was applied | 0, 1
+| invoices_overdue | Whether invoices are overdue | 0, 1, important
+| support_ticket_count | Number of support tickets | how many help requested, A high number could indicate either a highly engaged user or a user who is having a lot of problems with the product.
+
+
+
+y = upgrades, downgrades, 
