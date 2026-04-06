@@ -1,0 +1,5 @@
+csm_action,account_count,avg_current_mrr,total_monthly_upside,annualised_pipeline,avg_active_months,avg_features_used,avg_seats
+WARM — Expand Seat Count,11582,577.91,7329800,87957600.0,3.8,1.9,75.2
+HOT — Standard to Enterprise,945,1112.89,850500,10206000.0,9.2,3.1,144.8
+WARM — Nurture to Standard,3657,5.71,394956,4739472.0,2.8,2.2,21.9
+HOT — Free to Standard,259,9.22,27972,335664.0,4.8,3.2,27.6
